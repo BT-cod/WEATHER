@@ -85,7 +85,7 @@ function dataProccessing() {
               method: "GET",
             };
             fetch(
-              `http://api.weatherapi.com/v1/current.json?key=50da71023c4243cb9ca113325231912&q=${city}&aqi=no`,
+              `https://api.weatherapi.com/v1/current.json?key=50da71023c4243cb9ca113325231912&q=${city}&aqi=no`,
               requestOptions
             )
               .then((response) => response.json())
@@ -228,7 +228,7 @@ function dataProccessing() {
       method: "GET",
     };
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=50da71023c4243cb9ca113325231912&q=${searchInput}&aqi=no`,
+      `https://api.weatherapi.com/v1/current.json?key=50da71023c4243cb9ca113325231912&q=${searchInput}&aqi=no`,
       requestOptions
     )
       .then((response) => response.json())
