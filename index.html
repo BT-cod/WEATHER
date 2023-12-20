@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="loader">
+        <div class="text">
+          <h1 id="text1">Let's</h1>
+        </div>
+        <div class="text">
+          <h1 id="text2">Know The</h1>
+        </div>
+        <div class="text">
+          <h1 id="text3">Weather</h1>
+        </div>
+        <div class="loader">
+          <div class="loading"></div>
+        </div>
+      </div>
+      <div id="page1">
+        <div id="leftside">
+          <div class="leftUp">
+            <h3 id="cityName">Bangalore</h3>
+            <h4 id="temp">12°C</h4>
+          </div>
+          <div class="leftDown">
+            <h3 id="time"></h3>
+            <h3 id="date"></h3>
+          </div>
+        </div>
+        <div id="rightside">
+          <div id="searchData">
+            <input type="text" placeholder="City Name" id="searchIpt" />
+            <button id="searchBtn">Search</button>
+          </div>
+          <div id="userdata">
+            <h3>Your Location:</h3>
+            <h2></h2>
+          </div>
+          <div id="data">
+            <div class="condition">
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/293.png" />
+              <h4></h4>
+            </div>
+            <div class="otherData">
+              <div class="dets">
+                <h4>Temp c</h4>
+                <h4 id="temp_c"></h4>
+              </div>
+              <div class="dets">
+                <h4>Temp f</h4>
+                <h4 id="temp_f"></h4>
+              </div>
+              <div class="dets">
+                <h4>Wind kph</h4>
+                <h4 id="wind_kph"></h4>
+              </div>
+              <div class="dets">
+                <h4>Wind mph</h4>
+                <h4 id="wind_mph"></h4>
+              </div>
+              <div class="dets">
+                <h4>Latitude</h4>
+                <h4 id="lat"></h4>
+              </div>
+            </div>
+            <div class="otherData">
+              <div class="dets">
+                <h4>Longitude</h4>
+                <h4 id="lon"></h4>
+              </div>
+              <div class="dets">
+                <h4>Wind_dir</h4>
+                <h4 id="wind_dir"></h4>
+              </div>
+              <div class="dets">
+                <h4>Humidity</h4>
+                <h4 id="humidity"></h4>
+              </div>
+              <div class="dets">
+                <h4>Cloud</h4>
+                <h4 id="cloud"></h4>
+              </div>
+              <div class="dets">
+                <h4>UV</h4>
+                <h4 id="uv"></h4>
+              </div>
+            </div>
+            <div id="ConditionVideo">
+              <video loop autoplay muted src="Rain.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
